@@ -1,4 +1,4 @@
-# Arabic Sign Language (ArSL) Auto-Typer
+> **Architectural Status:** Production-ready dual-hand coordinate extraction engine with integrated system-level UI automation. Read the full [Technical Design Document](./TECHNICAL_DESIGN_DOC.md).
 
 An end-to-end accessibility system that translates Arabic Sign Language (ArSL) gestures into real-time typed Arabic text. This project bridges custom hardware prototyping with computer vision, dual-hand landmark extraction, and machine learning classification to automate text input seamlessly into any active application.
 
