@@ -40,3 +40,17 @@ ArSL_AutoTyper/
 ├── classes.py # Class labels mapping
 └── README.md # Project documentation
 
+
+---
+
+## ⚠️ Limitations & Failure Cases
+
+While the ArSL Auto-Typer achieves real-time translation and smooth inference ($\ge 25\text{-}30\text{ FPS}$) under standard operating conditions, testing revealed a few edge cases:
+* **Lighting Sensitivity:** Performance drops slightly in dim or harshly back-lit environments because MediaPipe struggles to cleanly isolate hand landmarks.
+* **Rapid Motion Blur:** Extremely fast signing can cause motion blur in the video frame, temporarily reducing classification confidence.
+* **Self-Occlusion:** When one hand crosses directly over or blocks the other hand, the dual-hand 3D coordinate extraction can momentarily misalign.
+
+**Next Steps / Future Improvements:** Implementing adaptive thresholding for low-light frames and expanding the training dataset with diverse lighting angles.
+
+---
+
